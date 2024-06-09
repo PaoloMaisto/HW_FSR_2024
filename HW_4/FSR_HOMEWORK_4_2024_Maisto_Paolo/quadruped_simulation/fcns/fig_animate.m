@@ -5,10 +5,10 @@ flag_movie = p.flag_movie;
 if flag_movie
     
     try
-        name = ['test.mp4'];
+        name = ['test_g5_kp20.mp4'];
         vidfile = VideoWriter(name,'MPEG-4');
     catch ME
-        name = ['test'];
+        name = ['test_g5_kp20'];
         vidfile = VideoWriter(name,'Motion JPEG AVI');
     end
     open(vidfile);
@@ -135,5 +135,5 @@ if flag_movie
 end
 
 
-exportgraphics(fig,'HW4_ES3_Paolo_Maisto.pdf')
+exportgraphics(fig,'g5_kp20.pdf')
 

@@ -59,10 +59,10 @@ end
 
 
 %% Physical Parameters
-p.mass = 5.5;                                   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+p.mass = 5.5;
 p.J = diag([0.026,0.112,0.075]);
 p.g = 9.81;
-p.mu = 1;       % friction coefficient         %%%%%%%%%%%%%% 0.3 forse meglio evitare maggiore di 1 poiche sono situazioni irrealistiche magari 1,2 - 1,8 
+p.mu = 1;       % friction coefficient
 p.z0 = 0.2;     % nominal COM height
 p.pf34 = [[0.15;0.094;0],[0.15;-0.094;0],[-0.15;0.094;0],[-0.15;-0.094;0]];
 
@@ -74,7 +74,7 @@ p.l1 = 0.14;    % link1 length
 p.l2 = 0.14;    % link2 length
 
 %% Swing phase 
-p.Kp_sw = 300;  % Kp for swing phase                            %%%%%%%%%%%%%% al massimo diminuirlo, abbassarlo di molto
+p.Kp_sw = 20;  % Kp for swing phase 300
 
 %% color
 p.body_color    = [42 80 183]/255;
